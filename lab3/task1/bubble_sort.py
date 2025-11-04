@@ -1,10 +1,8 @@
-import random
-
-
 def bubble_sort(arr):
     for i in range(len(arr) - 1):
         for j in range(len(arr) - 1 - i):
             if arr[j] > arr[j + 1]:
+                # zamiana elementów
                 temp = arr[j]
                 arr[j] = arr[j + 1]
                 arr[j + 1] = temp
@@ -12,8 +10,9 @@ def bubble_sort(arr):
     return arr
 
 
-def main():
+import random
 
+def main():
     # Pobranie danych od użytkownika
     n = int(input("Podaj długość listy: "))
     min_val = int(input("Podaj minimalną wartość liczby: "))
@@ -28,7 +27,6 @@ def main():
     bubble_sort(lista)
     print("\nLista po sortowaniu:")
     print(lista)
-
 
 # Uruchomienie programu
 if __name__ == "__main__":

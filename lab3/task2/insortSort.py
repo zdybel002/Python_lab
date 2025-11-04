@@ -1,9 +1,7 @@
 import random
 
-def insertion_sort(arr):
-
+def insortSort(arr):
     length = len(arr)
-
     for i in range(1, length):
         key = arr[i]
         j = i - 1
@@ -28,7 +26,7 @@ def main():
     print(lista)
 
     # Sortowanie przez wstawianie
-    lista = insertion_sort(lista)
+    lista = insortSort(lista)
     print("\nLista po sortowaniu:")
     print(lista)
 
