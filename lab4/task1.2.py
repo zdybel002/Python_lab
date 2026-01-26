@@ -25,8 +25,7 @@ def najrzadszy_fragment(array):
         if min_wystapien is None or liczba < min_wystapien:
             min_wystapien = liczba
             najrzadszy = para
-
-    return najrzadszy, min_wystapien
+        return najrzadszy, min_wystapien
 
 
 array = []
@@ -34,7 +33,7 @@ array = []
 with open("pi.txt", "r", encoding="utf-8") as f:
     text = ""
     for linia in f:
-        text += linia.strip()  # dodaj linię do całości bez spacji i enterów
+        text += linia.strip()
 
 
 for i in range(10):
