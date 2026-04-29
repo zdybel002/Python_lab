@@ -1,5 +1,4 @@
 
-
 def najczestszy_fragment(array):
     if len(array) == 0:
         return None
@@ -14,18 +13,21 @@ def najczestszy_fragment(array):
 
     return najczestszy, max_wystapien
 
+
 def najrzadszy_fragment(array):
-    if len(array) == 0:
+    if not array:
         return None
 
-    min_wystapien = None
-    najrzadszy = None
+
+    najrzadszy, min_wystapien = array[0]
 
     for para, liczba in array:
-        if min_wystapien is None or liczba < min_wystapien:
+        if liczba < min_wystapien:
             min_wystapien = liczba
             najrzadszy = para
-        return najrzadszy, min_wystapien
+
+    return najrzadszy, min_wystapien
+
 
 
 array = []
@@ -41,7 +43,7 @@ for i in range(10):
         para = str(i) + str(j)
         liczba_powtorzen = text.count(para)
         array.append((para, liczba_powtorzen))
-        print(para, "=>", liczba_powtorzen)
+
 
 print("\nWszystkie wyniki:")
 print(array)

@@ -1,37 +1,13 @@
 import time
-
-def bubble_sort(arr):
-    for i in range(len(arr) - 1):
-        for j in range(len(arr) - 1 - i):
-            if arr[j] > arr[j + 1]:
-                # zamiana elementów
-                temp = arr[j]
-                arr[j] = arr[j + 1]
-                arr[j + 1] = temp
-    return arr
-
-
-def insortSort(arr):
-    length = len(arr)
-    for i in range(1, length):
-        key = arr[i]
-        j = i - 1
-
-        while j >= 0 and arr[j] > key:
-            arr[j + 1] = arr[j]
-            j -= 1
-
-        arr[j + 1] = key
-
-    return arr
-
+from lab3.task1.bubble_sort import bubble_sort
+from lab3.task2.insortSort import insortSort
 
 def main():
     input_filename = "dane-3.txt"
     output_bubble = "wynik_bubble.txt"
     output_insertion = "wynik_insertion.txt"
 
-    # --- Wczytanie danych z pliku ---
+
     with open(input_filename, "r") as f:
         data = f.read().split()
         arr = [int(x) for x in data]

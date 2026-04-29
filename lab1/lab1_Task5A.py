@@ -1,6 +1,3 @@
-# Task 5 A
-
-# Varuable of year
 choosed_year = 2032
 
 

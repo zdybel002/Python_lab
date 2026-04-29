@@ -14,13 +14,13 @@ for i in range(len(cyfry) - dlugosc_ciagu + 1):
     a = cyfry[i: i + 6]
     czy_jest_dobry = False
 
-    if (a[0] < a[1]) and (a[2] > a[3] and a[3] > a[4] and a[4] > a[5]):
+    if a[0] < a[1] > a[2] > a[3] > a[4] > a[5]:
         czy_jest_dobry = True
-
-    if (a[0] < a[1] and a[1] < a[2]) and (a[3] > a[4] and a[4] > a[5]):
+    elif a[0] < a[1] < a[2] > a[3] > a[4] > a[5]:
         czy_jest_dobry = True
-
-    if (a[0] < a[1] and a[1] < a[2] and a[2] < a[3]) and (a[4] > a[5]):
+    elif a[0] < a[1] < a[2] < a[3] > a[4] > a[5]:
+        czy_jest_dobry = True
+    elif a[0] < a[1] < a[2] < a[3] < a[4] > a[5]:
         czy_jest_dobry = True
 
     if czy_jest_dobry:

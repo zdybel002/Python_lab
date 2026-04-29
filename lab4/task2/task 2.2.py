@@ -46,12 +46,10 @@ for slowo in lista_slow:
     lista_wynikow.append(str(ile_wakacji))
 
 plik_wynikowy = open("wyniki2_2.txt", "w")
-linia_do_zapisu = ""
 
 for wynik in lista_wynikow:
-    linia_do_zapisu = linia_do_zapisu + wynik + " "
+    plik_wynikowy.write(wynik + "\n")
 
-plik_wynikowy.write(linia_do_zapisu)
 plik_wynikowy.close()
 
 print("Gotowe! Wyniki w pliku wyniki2_2.txt")

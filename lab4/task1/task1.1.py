@@ -1,5 +1,5 @@
 
-numberHigterNity = 0
+licznik = 0
 
 with open("pi.txt", "r", encoding="utf-8") as f:
     poprzednia = None
@@ -11,8 +11,8 @@ with open("pi.txt", "r", encoding="utf-8") as f:
             polaczone = int(poprzednia + linia)
 
             if polaczone > 90:
-                numberHigterNity = numberHigterNity + 1
+                licznik = licznik + 1
 
         poprzednia = linia
 
-print("Numbers of ninety is:", numberHigterNity)
+print("Numbers of ninety is:", licznik)

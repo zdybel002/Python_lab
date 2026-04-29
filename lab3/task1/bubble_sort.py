@@ -14,12 +14,12 @@ import random
 
 def main():
     # Pobranie danych od użytkownika
-    n = int(input("Podaj długość listy: "))
+    dlugosc_listy = int(input("Podaj długość listy: "))
     min_val = int(input("Podaj minimalną wartość liczby: "))
     max_val = int(input("Podaj maksymalną wartość liczby: "))
 
     # Generowanie listy losowych liczb
-    lista = [random.randint(min_val, max_val) for _ in range(n)]
+    lista = [random.randint(min_val, max_val) for _ in range(dlugosc_listy)]
     print("\nLista przed sortowaniem:")
     print(lista)
 

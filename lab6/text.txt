@@ -1,6 +1,0 @@
-gus
-ewrostat
-kaggle.com
-data.gov
-
-Matplotlib  wizulicja

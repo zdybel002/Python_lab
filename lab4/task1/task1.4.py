@@ -44,7 +44,7 @@ for i in range(len(cyfry) - 1):
 
     if calkowita_dlugosc > maksymalna_dlugosc:
         maksymalna_dlugosc = calkowita_dlugosc
-        pozycja_startu = poczatek_ciagu + 1
+        pozycja_startu = poczatek_ciagu
         znaleziony_ciag = cyfry[poczatek_ciagu: poczatek_ciagu + calkowita_dlugosc]
 
 print("Zadanie 1.4")
